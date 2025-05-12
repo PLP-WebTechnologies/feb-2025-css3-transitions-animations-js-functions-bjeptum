@@ -1,0 +1,81 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f9ff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.game-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff6b6b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.character-container {
+    margin: 30px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.character {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.character:hover {
+    transform: scale(1.05);
+}
+
+.dance {
+    animation: characterDance 1s ease infinite;
+}
+
+@keyframes characterDance {
+    0% { transform: rotate(0deg) scale(1); }
+    25% { transform: rotate(10deg) scale(1.1); }
+    50% { transform: rotate(0deg) scale(1); }
+    75% { transform: rotate(-10deg) scale(1.1); }
+    100% { transform: rotate(0deg) scale(1); }
+}
+
+.game-stats {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #4a4a4a;
+}
+
+.game-btn {
+    background-color: #74b9ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s;
+}
+
+.game-btn:hover {
+    background-color: #0984e3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instructions {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #636e72;
+}
